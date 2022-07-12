@@ -1,0 +1,3 @@
+FROM scratch
+COPY hello.static /
+ENTRYPOINT ["/hello.static"]
