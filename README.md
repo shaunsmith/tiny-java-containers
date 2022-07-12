@@ -12,11 +12,19 @@ To support static linking libc, GraalVM Native Image supports using the
 "lightweight, fast, simple, free" [musl](https://musl.libc.org/) libc
 implementation.
 
-**NOTE**: GraalVM Native Image also supports dynamically linked and "[mostly static](https://www.graalvm.org/22.0/reference-manual/native-image/StaticImages/)" executables not described here.
+**NOTE**: GraalVM Native Image also supports dynamically linked and "[mostly
+static](https://www.graalvm.org/22.0/reference-manual/native-image/StaticImages/)"
+executables not described here.
 
-## Linux Setup
+## Prerequisites
+
+You'll need GraalVM Native Image installed.  This code was last tested with
+version 22.1.  You'll also need Docker installed and running.  It should work
+fine with [podman](https://podman.io/) but it has not been tested.
 
 These instructions have only been tested on Linux amd64.
+
+## Setup and Build
 
 Clone this Git repo and in your shell type the following to download and
 configure the MUSL toolchain.
@@ -29,7 +37,7 @@ executable, compress the executable with [upx](https://upx.github.io/), and
 package both the static executable and the compressed executable into `scratch`
 Docker container images using the provided script:
 
-![](images/keyboard.jpg) `% build-hello.sh`
+![](images/keyboard.jpg) `% ./build-hello.sh`
 
 ## The Executables
 
