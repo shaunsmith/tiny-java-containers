@@ -91,7 +91,7 @@ COPY hello.upx /
 ENTRYPOINT ["/hello.upx"]
 ```
 
-Running them is straight forward:
+Running them is straightforward:
 
 ![](images/keyboard.jpg) `% docker run --rm hello:static`
 
