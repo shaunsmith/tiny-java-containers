@@ -31,7 +31,7 @@ configure the MUSL toolchain.
 
 ![](images/keyboard.jpg) `% source setup-musl.sh`
 
-Compile a simple single Java class Hello World application with `javac`, compile
+Next compile a simple single Java class Hello World application with `javac`, compile
 the generated .class file into a fully statically linked native Linux
 executable, compress the executable with [upx](https://upx.github.io/), and
 package both the static executable and the compressed executable into `scratch`
