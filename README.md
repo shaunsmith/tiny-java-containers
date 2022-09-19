@@ -18,8 +18,8 @@ executables not described here.
 
 ## Prerequisites
 
-You'll need GraalVM Native Image installed.  This code was last tested with
-version 22.3's JDK 19 preview.  You'll also need Docker installed and running.
+You'll need GraalVM Native Image installed.  This code was tested with a preview
+build of GraalVM 22.3 for JDK 19.  You'll also need Docker installed and running.
 It should work fine with [podman](https://podman.io/) but it has not been
 tested.
 
