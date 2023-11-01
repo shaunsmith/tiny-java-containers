@@ -1,4 +1,0 @@
-FROM scratch
-COPY jwebserver.upx /
-COPY index.html /web/index.html
-ENTRYPOINT ["/jwebserver.upx", "-b", "0.0.0.0", "-d", "/web"]
